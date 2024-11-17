@@ -1,9 +1,15 @@
 import React from 'react'
+import SearchBox from './searchBox'
+import CockTail from './CockTail'
 
 const Home = () => {
+ 
   return (
     <div>
-      <h1>Hello</h1>
+      
+      <SearchBox></SearchBox>
+      <CockTail></CockTail>
+     
     </div>
   )
 }

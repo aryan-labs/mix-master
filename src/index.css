@@ -1,17 +1,25 @@
 *{
   text-decoration: none;
   color: inherit;
+ 
 }
+body{
+  background-color: #f1f5f8;
+}
+
 .Navbar{
   display: flex;
   justify-content: space-between;
   margin-top: -10px;
-  width: 80%;
-  margin-left: 100px;
+  background-color: white;
+  padding-left: 100px;
+  width: 100%;
+ 
 }
 .Navbar-comp{
   display: flex;
   gap: 20px;
+  padding-right: 200px;
   align-items: center;
 }
 .Navbar-comp h1{
@@ -27,3 +35,82 @@
 color: #10B981;
   text-decoration: none;
 }
+.search-item input{
+width: 400px;
+height: 20px;
+  }
+  .search-item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    
+
+    margin-top: 80px;
+  }
+  .search-item button{
+    width: 70px;
+    height: 25px;
+    color: white;
+    background-color: #10B981;
+    border: none;
+  }
+  .item-button{
+      width: 70px;
+        height: 25px;
+        color: white;
+        background-color: #10B981;
+        border: none;
+  }
+  .cocktails{
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr;
+    margin-top: 50px;
+    align-items: center;
+    justify-content: center;
+    margin-left: 80px;
+    gap: 20px;
+    line-height: 2;
+  }
+  .cocktails img{
+    width: 330px;
+    height: 270px;
+  }
+  .cocktail-cards{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+     width: 330px;
+     height: 440px;
+box-shadow:1px 3px 2px 0px rgba(0, 0, 0, 0.1);
+border-radius: 10px;
+  }
+  .cocktail-des{
+    color: gray;
+  }
+  .cocktail-cards p{
+    font-size: 20px;
+  }
+  .cocktail-det{
+    padding-left: 20px;
+    line-height: 0.5;
+
+  }
+    .cocktail-details {
+      text-align: center;
+      padding: 20px;
+    }
+  
+    .cocktail-details img {
+      max-width: 300px;
+      border-radius: 10px;
+    }
+  
+    .cocktail-details ul {
+      list-style-type: none;
+      padding: 0;
+    }
+  
+    .cocktail-details li {
+      margin: 5px 0;
+    }
