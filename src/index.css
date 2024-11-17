@@ -97,20 +97,85 @@ border-radius: 10px;
 
   }
     .cocktail-details {
-      text-align: center;
+      display: flex;
       padding: 20px;
     }
   
     .cocktail-details img {
-      max-width: 300px;
+      width: 400px;
       border-radius: 10px;
     }
   
-    .cocktail-details ul {
-      list-style-type: none;
-      padding: 0;
+   
+    .cocktail-details strong{
+      background-color: #6EE7B7;
+   
+      color: #047857;
     }
-  
-    .cocktail-details li {
-      margin: 5px 0;
+    .cocktail-details p{
+      margin-left: 30px;
+      font-size: 22px;
+      font-weight: 1000 ;
+    }
+    .Back-home{
+          width: 100px;
+            height: 25px;
+            color: white;
+            background-color: #10B981;
+            border: none;
+            margin-left: 47%;
+            margin-top: 40px;
+    }
+    .about-us p{
+color: gray;
+line-height: 2;
+    }
+    .about-us{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .about-us{
+      width: 80%;
+      margin-left: 100px;
+    }
+    .NewsLetter-form{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+    }
+    .NewsLetter-form h1{
+      font-size: 30px;
+      font-weight: 100;
+    }
+    .newsLetter input{
+      width: 430px;
+    background-color: #f1f5f8;
+    border: none;
+      height: 30px;
+    }
+    .submit-but{
+        color: white;
+        background-color: #10B981;
+        border: none;
+        width: 440px;
+        height: 30px;
+        margin-top: 10px;
+    }
+    .heading{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: -20px;
+    }
+    .NewsLetter-form form{
+      margin-top: 40px;
+      width: 500px;
+      display: flex;
+      flex-direction: column;
+      height: 400px;
+      background-color: white;
+      align-items: center;
     }

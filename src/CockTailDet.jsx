@@ -1,5 +1,5 @@
 import React from 'react';
-import { useParams } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 import { useQuery } from 'react-query';
 import axios from 'axios';
 import './index.css'; // Assuming you have styles defined
@@ -14,7 +14,7 @@ const CockTailDet = () => {
     const response = await axios.get(`${url}${id}`);
     return response.data;
   });
-
+console.log(    data)
   if (isLoading) return <div>Loading...</div>;
   if (error) return <div>Error: {error.message}</div>;
 
@@ -23,27 +23,22 @@ const CockTailDet = () => {
 
   // Render details
   return (
+    <div>
+       <Link to='/'> <button className='Back-home'>Back To Home</button></Link>
     <div className="cocktail-details">
+
       <img src={cocktail.strDrinkThumb} alt={cocktail.strDrink} />
-      <h1>{cocktail.strDrink}</h1>
+      <div>
+      <p><strong>Name:</strong>{cocktail.strDrink}</p>
       <p><strong>Category:</strong> {cocktail.strCategory}</p>
       <p><strong>Glass:</strong> {cocktail.strGlass}</p>
       <p><strong>Type:</strong> {cocktail.strAlcoholic}</p>
       <p><strong>Instructions:</strong> {cocktail.strInstructions}</p>
-      <h3>Ingredients:</h3>
-      <ul>
-        {Array.from({ length: 15 }, (_, index) => {
-          const ingredient = cocktail[`strIngredient${index + 1}`];
-          const measure = cocktail[`strMeasure${index + 1}`];
-          return (
-            ingredient && (
-              <li key={index}>
-                {ingredient} {measure ? `- ${measure}` : ''}
-              </li>
-            )
-          );
-        })}
-      </ul>
+      <p><strong>Ingredients:</strong>
+      {cocktail.strIngredient1},{cocktail.strIngredient2},{cocktail.strIngredient3},
+       {cocktail.strIngredient4},{cocktail.strIngredient5}</p>
+</div>
+    </div>
     </div>
   );
 };
